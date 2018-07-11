@@ -255,3 +255,36 @@
 语法:jquery对象.each(function(index,element))
 ```
 
+#### 14. jQuery中的ajax的事件
+
+```
+$(document).ajaxComplete() => 注册ajax请求完成时要调用的函数
+$(document).ajaxError() => 注册ajax请求失败时要调用的函数
+$(document).ajaxstart() => 注册ajax请求开始时要调用的函数
+$(document).ajaxStop() => 注册ajax请求终止要调用的函数
+$(document).ajaxsuccess() => 注册ajax请求成功完成时要调用的函数
+$(document).ajaxSend() => 注册ajax发送请求之前要调用的函数
+```
+
+#### 15. h5新增-操作类名
+
+```
+(1)//添加类 node.classList.add("classname");
+(2)//移除类 node.classList.remove("classname");
+(3)//切换类 node.classList.toggle("classname");
+(4)//判断类 node.classList.contains("classname");
+```
+
+#### 16. h5新增-操作自定义属性
+
+```
+eg: <div id="demo" data-name="itcast" data-age="10" data-user-name="ff">
+//var demo = document.querySelector('#demo');
+
+(1) 读取 demo.dataset['name'] 或者 demo.dataset['age']
+(2) 设置demo.dataset['name'] = 'web developer'
+(3) demo.dataset['userName']
+
+注意：在data-*属性中，大写字母无效，相当于是小写字母
+在data-*中的中划线(-)跟小写字母会转换成更大些字母 data-abc-def === abcDef
+```
